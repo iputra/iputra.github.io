@@ -1,0 +1,57 @@
+<h2 id="install-the-environment">Install the Environment</h2>
+
+<p>To create the website we need some tools, such as ruby environment, gem, and jekyll of course. okay, to install that let’s check it out</p>
+
+<ol>
+  <li>Install Ruby from source to get the newer version
+    <div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>wget http://ftp.ruby-lang.org/pub/ruby/2.4/ruby-2.4.0.tar.gz
+<span class="gp">$ </span>tar -xzvf ruby-2.4.0.tar.gz
+<span class="gp">$ </span><span class="nb">cd </span>ruby-2.4.0/
+<span class="gp">$ </span>./configure
+<span class="gp">$ </span>make
+<span class="gp">$ </span>sudo make install
+<span class="gp">$ </span>ruby -v
+</code></pre>
+    </div>
+  </li>
+  <li>Install gem from package manager
+    <div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>sudo apt install gem
+</code></pre>
+    </div>
+  </li>
+  <li>Install jekyll from gem
+    <div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>gem instal jekyll
+</code></pre>
+    </div>
+  </li>
+  <li>Find The page
+    <div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>wget https://github.com/kronik3r/daktilo/archive/master.zip
+<span class="gp">$ </span>unzip master.zip
+</code></pre>
+    </div>
+  </li>
+  <li>Run with jekyll
+    <div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span><span class="nb">cd </span>daktilo-master
+<span class="gp">$ </span>jekyll serve
+</code></pre>
+    </div>
+  </li>
+</ol>
+
+<p><br /></p>
+<h2 id="create-the-post">Create the post</h2>
+
+<p>To create the post you need follow the format from the sample page, if not follow you can’t get the style for your post.</p>
+
+<p><strong>add this header to every your post</strong></p>
+<div class="language-html highlighter-rouge"><pre class="highlight"><code>---
+layout: post
+title: "Your Title Here"
+subtitle: "Your Subtitle Here"
+date: 2015-09-06
+categories: [design, tool]
+---
+</code></pre>
+</div>
+
+<p>i think it’s enough for create the page or blog with jekyll.</p>
