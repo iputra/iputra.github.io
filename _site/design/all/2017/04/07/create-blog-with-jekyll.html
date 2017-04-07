@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Create Blog With Jekyll —  &raquo;  Casan</title>
+<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+<meta name="keywords" content="">
+<link rel="canonical" href="http://localhost:4000/design/all/2017/04/07/create-blog-with-jekyll.html">
+        
+
+
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Create Blog With Jekyll" />
+<meta name="twitter:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+" />
+<meta name="twitter:image" content="http://localhost:4000" />
+
+<!-- Google plus -->
+<meta name="author" content="https://www.google.com/+IkhsanPutra">
+<link rel="author" href="https://www.google.com/+IkhsanPutra">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Create Blog With Jekyll">
+<meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+<meta property="og:url" content="http://localhost:4000/design/all/2017/04/07/create-blog-with-jekyll.html">
+<meta property="og:site_name" content="Casan">
+
+        <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/assets/vendor/normalize-css/normalize.css">
+<link rel="stylesheet" href="/css/main.css">
+
+  <link rel="stylesheet" href="/assets/vendor/highlight/styles/solarized_dark.css">
+
+<link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.css">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <header class="header">
+    <div class="navigation">
+        <a href="/" class="logo">Casan</a>
+
+        <ul class="menu">
+            <li class="menu__entry"><a href="/about">About</a></li>
+            <li class="menu__entry"><a href="/">Blog</a></li>
+        </ul>
+    </div>
+
+    <ul class="social-links">
+        
+            <a href="https://github.com/iputra" class="social-links__entry" target="_blank">
+                <i class="fa fa-github"></i>
+            </a>
+        
+
+        
+            <a href="https://twitter.com/i_putra" class="social-links__entry" target="_blank">
+                <i class="fa fa-twitter"></i>
+            </a>
+        
+    </ul>
+</header>
+
+            <h1 class="page-title post-title">
+    <div class="page-title__text post-title__text">Create Blog With Jekyll</div>
+    <div class="page-title__subtitle post-title__subtitle"></div>
+</h1>
+
+<div class="content">
+    <h2 id="install-the-environment">Install the Environment</h2>
+
+<p>To create the website we need some tools, such as ruby environment, gem, and jekyll of course. okay, to install that let’s check it out</p>
+
+<ol>
+  <li>Install Ruby from source to get the newer version
+    <div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>wget http://ftp.ruby-lang.org/pub/ruby/2.4/ruby-2.4.0.tar.gz
+<span class="gp">$ </span>tar -xzvf ruby-2.4.0.tar.gz
+<span class="gp">$ </span><span class="nb">cd </span>ruby-2.4.0/
+<span class="gp">$ </span>./configure
+<span class="gp">$ </span>make
+<span class="gp">$ </span>sudo make install
+<span class="gp">$ </span>ruby -v
+</code></pre>
+    </div>
+  </li>
+  <li>Install gem from package manager
+    <div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>sudo apt install gem
+</code></pre>
+    </div>
+  </li>
+  <li>Install jekyll from gem
+    <div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>gem instal jekyll
+</code></pre>
+    </div>
+  </li>
+  <li>Find The page
+    <div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>wget https://github.com/kronik3r/daktilo/archive/master.zip
+<span class="gp">$ </span>unzip master.zip
+</code></pre>
+    </div>
+  </li>
+  <li>Run with jekyll
+    <div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span><span class="nb">cd </span>daktilo-master
+<span class="gp">$ </span>jekyll serve
+</code></pre>
+    </div>
+  </li>
+</ol>
+
+<p><br /></p>
+<h2 id="create-the-post">Create the post</h2>
+
+<p>To create the post you need follow the format from the sample page, if not follow you can’t get the style for your post.</p>
+
+<p><strong>add this header to every your post</strong></p>
+<div class="language-html highlighter-rouge"><pre class="highlight"><code>---
+layout: post
+title: "Your Title Here"
+subtitle: "Your Subtitle Here"
+date: 2015-09-06
+categories: [design, tool]
+---
+</code></pre>
+</div>
+
+<p>i think it’s enough for create the page or blog with jekyll.</p>
+
+</div>
+
+<div class="about">
+    <div class="about__devider">*****</div>
+    <div class="about__text">
+        Written by <strong>  Ikhsan Putra </strong>
+        on <strong>07 April 2017</strong>
+    </div>
+</div>
+
+
+        </div>
+
+        <script src="/assets/vendor/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+        
+    </body>
+</html>
