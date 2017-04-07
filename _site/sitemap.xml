@@ -3,7 +3,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/design/all/2017/04/07/create-blog-with-jekyll.html/</loc>
+      <loc>http://localhost:4000/2017/04/07/git-fundamentals.html/</loc>
       
         <lastmod>2017-04-07T00:00:00+07:00</lastmod>
       
@@ -18,7 +18,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/2017/04/07/belajar-git.html/</loc>
+      <loc>http://localhost:4000/design/all/2017/04/07/create-blog-with-jekyll.html/</loc>
       
         <lastmod>2017-04-07T00:00:00+07:00</lastmod>
       
@@ -83,7 +83,7 @@
     <url>
       <loc>http://localhost:4000/about/</loc>
       
-        <lastmod>2017-04-07T16:41:13+07:00</lastmod>
+        <lastmod>2017-04-07T16:43:22+07:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -98,7 +98,7 @@
     <url>
       <loc>http://localhost:4000/categories/design/</loc>
       
-        <lastmod>2017-04-07T16:41:13+07:00</lastmod>
+        <lastmod>2017-04-07T16:43:22+07:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -115,7 +115,7 @@
     <url>
       <loc>http://localhost:4000/</loc>
       
-        <lastmod>2017-04-07T16:41:13+07:00</lastmod>
+        <lastmod>2017-04-07T16:43:22+07:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -132,7 +132,7 @@
     <url>
       <loc>http://localhost:4000/categories/productivity/</loc>
       
-        <lastmod>2017-04-07T16:41:13+07:00</lastmod>
+        <lastmod>2017-04-07T16:43:22+07:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -151,7 +151,7 @@
     <url>
       <loc>http://localhost:4000/categories/tools/</loc>
       
-        <lastmod>2017-04-07T16:41:13+07:00</lastmod>
+        <lastmod>2017-04-07T16:43:22+07:00</lastmod>
       
       
         <changefreq>monthly</changefreq>

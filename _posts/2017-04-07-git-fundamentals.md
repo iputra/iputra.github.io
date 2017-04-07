@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Belajar GIT"
+title: "GIT Fundamentals"
 date: 2017-04-07
 ---
 
