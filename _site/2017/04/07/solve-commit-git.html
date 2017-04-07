@@ -4,11 +4,11 @@
         <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title> Casan</title>
+<title> solve commit in git —  &raquo;  Casan</title>
 <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 ">
-
-<link rel="canonical" href="http://localhost:4000/categories/design/">
+<meta name="keywords" content="">
+<link rel="canonical" href="http://localhost:4000/2017/04/07/solve-commit-git.html">
         
 
 
@@ -16,7 +16,7 @@
 
 <!-- Twitter Cards -->
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Casan" />
+<meta name="twitter:title" content="solve commit in git" />
 <meta name="twitter:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 " />
 <meta name="twitter:image" content="http://localhost:4000" />
@@ -28,10 +28,10 @@
 <!-- Open Graph -->
 <meta property="og:locale" content="">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Casan">
+<meta property="og:title" content="solve commit in git">
 <meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 ">
-<meta property="og:url" content="http://localhost:4000/categories/design/">
+<meta property="og:url" content="http://localhost:4000/2017/04/07/solve-commit-git.html">
 <meta property="og:site_name" content="Casan">
 
         <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
@@ -70,62 +70,41 @@
     </ul>
 </header>
 
-            
-
-<h1 class="page-title">
-    <div class="page-title__text">Design</div>
-    <div class="page-title__subtitle">Articles on the category <strong>‘Design’</strong></div>
+            <h1 class="page-title post-title">
+    <div class="page-title__text post-title__text">solve commit in git</div>
+    <div class="page-title__subtitle post-title__subtitle"></div>
 </h1>
 
-<ul class="list-posts">
-    
-    
-        
-    
-        
-    
-        
-            <li class="post-teaser">
-                <a href="/design/all/2017/04/07/create-blog-with-jekyll.html">
-                    <span class="post-teaser__title">Create Blog With Jekyll</span>
-                    <span class="post-teaser__date">07 April 2017</span>
-                </a>
-            </li>
-            
-        
-    
-        
-    
-        
-            <li class="post-teaser">
-                <a href="/design/tool/2015/09/06/welcome-to-jekyll.html">
-                    <span class="post-teaser__title">Welcome to Jekyll!</span>
-                    <span class="post-teaser__date">06 September 2015</span>
-                </a>
-            </li>
-            
-        
-    
-        
-    
+<div class="content">
+    <p>Kadang masalah akan selalu muncul dalam hal-hal yang baru di coba. Masalah masalah inilah yang akan melatih kemampuan kita hingga bisa naik ke tahap berikutnya. Nah di dalam proses belajar git, gue dapet kendala ketika melakukan commit. Kira kira kaya gini contohnya.</p>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>git commit -m <span class="s2">"save arezzo files"</span>
+On branch master
+Changes not staged <span class="k">for </span>commit:
+  <span class="o">(</span>use <span class="s2">"git add &lt;file&gt;..."</span> to update what will be committed<span class="o">)</span>
+  <span class="o">(</span>use <span class="s2">"git checkout -- &lt;file&gt;..."</span> to discard changes <span class="k">in </span>working directory<span class="o">)</span>
 
-    
-</ul>
-
-<div class="explore">
-    <div class="explore__devider">*****</div>
-    <div class="explore__label">Explore the different categories</div>
-    <ul class="categories">
-        
-            <li class="categories__item"><a href="/categories/design">Design</a></li>
-        
-            <li class="categories__item"><a href="/categories/tools">Tools</a></li>
-        
-            <li class="categories__item"><a href="/categories/productivity">Productivity</a></li>
-        
-		<li class="categories__item"><a href="/">All</a></li>
-    </ul>
+      modified:   arezzo.txt
+      modified:   arezzo.jsp
+no changes added to commit <span class="o">(</span>use <span class="s2">"git add"</span> and/or <span class="s2">"git commit -a"</span><span class="o">)</span>
+</code></pre>
 </div>
+
+<p>Masalah ini penyebabnya karena terdapat folder .git di dalam subfolder master branch. Untuk menyelesaikan masalah ini cukup mudah hanya hapus saja folder .git yang ada pada sub folder. Karena kalo satu satu ngehapusnya lumayan lama dan bikin pegel, cara yang mudahnya bisa pake perintah dibawah</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$ find . -type f | grep -i "\.git" | xargs rm
+</code></pre>
+</div>
+
+</div>
+
+<div class="about">
+    <div class="about__devider">*****</div>
+    <div class="about__text">
+        Written by <strong>  Ikhsan Putra </strong>
+        on <strong>07 April 2017</strong>
+    </div>
+</div>
+
 
         </div>
 
