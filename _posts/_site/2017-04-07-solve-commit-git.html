@@ -1,0 +1,18 @@
+<p>Kadang masalah akan selalu muncul dalam hal-hal yang baru di coba. Masalah masalah inilah yang akan melatih kemampuan kita hingga bisa naik ke tahap berikutnya. Nah di dalam proses belajar git, gue dapet kendala ketika melakukan commit. Kira kira kaya gini contohnya.</p>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>git commit -m <span class="s2">"save arezzo files"</span>
+On branch master
+Changes not staged <span class="k">for </span>commit:
+  <span class="o">(</span>use <span class="s2">"git add &lt;file&gt;..."</span> to update what will be committed<span class="o">)</span>
+  <span class="o">(</span>use <span class="s2">"git checkout -- &lt;file&gt;..."</span> to discard changes <span class="k">in </span>working directory<span class="o">)</span>
+
+      modified:   arezzo.txt
+      modified:   arezzo.jsp
+no changes added to commit <span class="o">(</span>use <span class="s2">"git add"</span> and/or <span class="s2">"git commit -a"</span><span class="o">)</span>
+</code></pre>
+</div>
+
+<p>Masalah ini penyebabnya karena terdapat folder .git di dalam subfolder master branch. Untuk menyelesaikan masalah ini cukup mudah hanya hapus saja folder .git yang ada pada sub folder. Karena kalo satu satu ngehapusnya lumayan lama dan bikin pegel, cara yang mudahnya bisa pake perintah dibawah</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$ find . -type f | grep -i "\.git" | xargs rm
+</code></pre>
+</div>

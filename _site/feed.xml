@@ -6,9 +6,64 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 08 Apr 2017 07:53:45 +0700</pubDate>
-    <lastBuildDate>Sat, 08 Apr 2017 07:53:45 +0700</lastBuildDate>
+    <pubDate>Sun, 09 Apr 2017 21:29:10 +0700</pubDate>
+    <lastBuildDate>Sun, 09 Apr 2017 21:29:10 +0700</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title>Splash Screen LibreOffice</title>
+        <description>&lt;ol&gt;
+  &lt;li&gt;Download the file
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /tmp
+&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;wget https://dl.opendesktop.org/api/files/download/id/1460753770/152469-LibreOffice.tar.gz 
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Extract and move
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;tar -zxvf 152469-LibreOffice.tar.gz
+&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;mv intro.png /usr/lib/libreoffice/program/intro.png
+&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;mv sofficerc.txt /etc/libreoffice/sofficerc
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Sun, 09 Apr 2017 00:00:00 +0700</pubDate>
+        <link>http://localhost:4000/2017/04/09/splash-screen-libreoffice.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/04/09/splash-screen-libreoffice.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Jekyll Admin Installation</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/image/jekyll-admin-installation-01.png&quot; alt=&quot;Jekyll Admin Installation&quot; /&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Make gemfile
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;touch Gemfile
+&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;vim Gemfile
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+    &lt;p&gt;the Gemfile contain code below here:&lt;/p&gt;
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'https://rubygems.org'&lt;/span&gt;
+gem &lt;span class=&quot;s1&quot;&gt;'jekyll-admin'&lt;/span&gt;, group: :jekyll_plugins
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;execute with bundle
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;bundle install
+&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;jekyll serve
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Sun, 09 Apr 2017 00:00:00 +0700</pubDate>
+        <link>http://localhost:4000/2017/04/09/jekyll-admin-installation.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/04/09/jekyll-admin-installation.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>solve commit in git</title>
@@ -198,8 +253,8 @@ categories: [design, tool]
 
 </description>
         <pubDate>Mon, 07 Sep 2015 06:34:01 +0700</pubDate>
-        <link>http://localhost:4000/design/tool/2015/09/06/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://localhost:4000/design/tool/2015/09/06/welcome-to-jekyll.html</guid>
+        <link>http://localhost:4000/design/tool/2015/09/07/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://localhost:4000/design/tool/2015/09/07/welcome-to-jekyll.html</guid>
         
         
         <category>design</category>
@@ -269,8 +324,8 @@ categories: [design, tool]
 &lt;p&gt;Want to suggest something? Please &lt;a href=&quot;https://github.com/kronik3r/daktilo/issues/new&quot;&gt;Send me a request&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Wed, 20 Aug 2014 06:56:45 +0700</pubDate>
-        <link>http://localhost:4000/tool/2014/08/19/sample-post.html</link>
-        <guid isPermaLink="true">http://localhost:4000/tool/2014/08/19/sample-post.html</guid>
+        <link>http://localhost:4000/tool/2014/08/20/sample-post.html</link>
+        <guid isPermaLink="true">http://localhost:4000/tool/2014/08/20/sample-post.html</guid>
         
         
         <category>tool</category>
