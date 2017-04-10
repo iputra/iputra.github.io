@@ -1,9 +1,10 @@
 ---
+title: Irssi Script /nicklist
 layout: post
-title: "Irssi Script /nicklist"
-date: 2017-04-10
+date: '2017-04-10'
 ---
 
+![irssi](/image/irssi-script-nicklist-01.png)
 1. Go to configuration directory
 ```bash
 $ mkdir ~/.irssi/scripts

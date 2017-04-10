@@ -1,0 +1,20 @@
+<p><img src="/image/jekyll-admin-installation-01.png" alt="Jekyll Admin Installation" /></p>
+<ol>
+  <li>Make gemfile
+    <div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>touch Gemfile
+<span class="gp">$ </span>vim Gemfile
+</code></pre>
+    </div>
+    <p>the Gemfile contain code below here:</p>
+    <div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="nb">source</span> <span class="s1">'https://rubygems.org'</span>
+gem <span class="s1">'jekyll-admin'</span>, group: :jekyll_plugins
+</code></pre>
+    </div>
+  </li>
+  <li>execute with bundle
+    <div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>bundle install
+<span class="gp">$ </span>bundle <span class="nb">exec </span>jekyll serve
+</code></pre>
+    </div>
+  </li>
+</ol>
