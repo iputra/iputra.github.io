@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Solve Commit in Git
+title: "Solve Commit in Git"
 date: 2017-04-07
 ---
 
