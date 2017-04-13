@@ -4,7 +4,7 @@ title: Splash Screen LibreOffice
 subtitle: Be Cool with GNU/Linux
 date: 2017-04-09
 ---
-
+![Splash Screen Libreoffice](/image/splash-screen-libreoffice-01.png)
 1. Download the file 
 ```bash
 $ cd /tmp

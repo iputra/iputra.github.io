@@ -6,9 +6,80 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 11 Apr 2017 19:35:43 +0700</pubDate>
-    <lastBuildDate>Tue, 11 Apr 2017 19:35:43 +0700</lastBuildDate>
+    <pubDate>Thu, 13 Apr 2017 19:30:53 +0700</pubDate>
+    <lastBuildDate>Thu, 13 Apr 2017 19:30:53 +0700</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title>QUCS - Electronics Simulation</title>
+        <description>&lt;ol&gt;
+  &lt;li&gt;Download the files
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;wget https://downloads.sourceforge.net/project/qucs/qucs/0.0.19/qucs-0.0.19.tar.gz
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Install Depedency
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;sudo apt update
+&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;sudo apt-get install build-essential libqt4-dev libqt4-qt3support automake libtool gperf flex bison git cmake
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Extract the Files
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;cp qucs-0.0.19.tar.gz /tmp
+&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;tar -zxvf qucs-0.0.19.tar.gz
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Build And Install
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;qucs
+&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;./configure
+&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;sudo make
+&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;sudo make install
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Source :
+&lt;br /&gt;&lt;a href=&quot;https://github.com/Qucs/qucs/wiki/Build-Linux&quot;&gt;https://github.com/Qucs/qucs/wiki/Build-Linux&lt;/a&gt;
+&lt;br /&gt;&lt;a href=&quot;http://qucs.sourceforge.net/build.html&quot;&gt;http://qucs.sourceforge.net/build.html&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 13 Apr 2017 00:00:00 +0700</pubDate>
+        <link>http://localhost:4000/2017/04/13/qucs-electronic-simulation.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/04/13/qucs-electronic-simulation.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Packet Tracer From Source</title>
+        <description>&lt;h3 id=&quot;install&quot;&gt;Install&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;Download the files
+&lt;br /&gt;Cisco Packet Tracer 6.3 &lt;a href=&quot;http://www.cs.rpi.edu/~kotfid/packettracer/LinuxUbuntu/PacketTracer63_linux.tar.gz&quot;&gt;cs.rpi.edu&lt;/a&gt;
+&lt;br /&gt;Cisco Packet Tracet 7.0 &lt;a href=&quot;https://drive.google.com/open?id=0B7zGwz0yWP8QZTVyTjRieGFFRHM&quot;&gt;32 bit gdrive&lt;/a&gt;
+ | &lt;a href=&quot;https://drive.google.com/open?id=0B7zGwz0yWP8QZWo2dGhjR2E3ck0&quot;&gt;64 bit gdrive&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Extract and configure
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /tmp
+&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;cp ~/Downloads/PacketTracerXX_linux.tar.gz .
+&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;tar -zxvf PacketTracerXX_linux.tar.gz
+&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;sudo ./install
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;uninstall&quot;&gt;Uninstall&lt;/h3&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;rm -r /opt/pt
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Wed, 12 Apr 2017 00:00:00 +0700</pubDate>
+        <link>http://localhost:4000/2017/04/12/packet-tracer-from-source.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/04/12/packet-tracer-from-source.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Journey, 11 Apr</title>
@@ -70,7 +141,8 @@
     
       <item>
         <title>Splash Screen LibreOffice</title>
-        <description>&lt;ol&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;/image/splash-screen-libreoffice-01.png&quot; alt=&quot;Splash Screen Libreoffice&quot; /&gt;&lt;/p&gt;
+&lt;ol&gt;
   &lt;li&gt;Download the file
     &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /tmp
 &lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;wget https://dl.opendesktop.org/api/files/download/id/1460753770/152469-LibreOffice.tar.gz 
