@@ -6,9 +6,81 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 13 Apr 2017 19:30:53 +0700</pubDate>
-    <lastBuildDate>Thu, 13 Apr 2017 19:30:53 +0700</lastBuildDate>
+    <pubDate>Fri, 14 Apr 2017 21:42:00 +0700</pubDate>
+    <lastBuildDate>Fri, 14 Apr 2017 21:42:00 +0700</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title>Unity Window Title</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/image/unity-window-title-01.png&quot; alt=&quot;Unity Window Title&quot; /&gt;
+Edit one of the theme files (e.g. gtk.css on arc-gtk). Modify this of the css file&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;UnityDecoration &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; Title settings &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
+    -UnityDecoration-title-indent: 5px; /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; Size property, left indent of the title &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
+    -UnityDecoration-title-fade: 35px; /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; Size property, space of the title that can be faded &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
+    -UnityDecoration-title-alignment: 0.5; /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; Float from 0.0 to 1.0, to align the title - THIS WHAT YOU REELY NEED&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Fri, 14 Apr 2017 00:00:00 +0700</pubDate>
+        <link>http://localhost:4000/2017/04/14/unity-window-title.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/04/14/unity-window-title.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Dash Icon</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/image/dash-icon-01.png&quot; alt=&quot;Dash Icon&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Create some new image for example &lt;code class=&quot;highlighter-rouge&quot;&gt;dash.png&lt;/code&gt;, replace default dash image in /usr/share/unity/icons/launcher_bfb.png with dash.png&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;mv /path/to/dash.png /usr/share/unity/icons/launcher_bfb.png
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Fri, 14 Apr 2017 00:00:00 +0700</pubDate>
+        <link>http://localhost:4000/2017/04/14/dash-icon.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/04/14/dash-icon.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Casan #02</title>
+        <description>&lt;h3 id=&quot;1-stacer&quot;&gt;1. Stacer&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/oguzhaninan/Stacer&quot;&gt;oguzhaninan/Stacer&lt;/a&gt;
+&lt;br /&gt;&lt;a href=&quot;http://www.omgubuntu.co.uk/2017/01/stacer-system-optimizer-for-ubuntu&quot;&gt;omgubuntu&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;2-albert-launcher&quot;&gt;2. Albert Launcher&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.webupd8.org/2017/01/albert-quick-launcher-090-released-with.html&quot;&gt;webupd8 - installation&lt;/a&gt;
+&lt;br /&gt;&lt;a href=&quot;http://www.webupd8.org/2015/01/albert-fast-lightweight-quick-launcher.html&quot;&gt;webupd8 - review&lt;/a&gt;
+&lt;br /&gt;&lt;a href=&quot;http://www.omgubuntu.co.uk/2016/10/your-favourite-alfred-app-launcher-linux&quot;&gt;omgubuntu&lt;/a&gt;
+&lt;br /&gt;&lt;a href=&quot;https://albertlauncher.github.io&quot;&gt;albertlauncher&lt;/a&gt;
+&lt;a href=&quot;https://github.com/albertlauncher/albert&quot;&gt;albertlauncher/albert&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;3-gkill&quot;&gt;3. gkill&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.omgubuntu.co.uk/2017/04/gkill-process-killer-interactive-cli&quot;&gt;omgubuntu&lt;/a&gt;
+&lt;br /&gt;&lt;a href=&quot;https://github.com/heppu/gkill&quot;&gt;heppu/gkill&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;4-vala-panel-appmenu&quot;&gt;4. Vala Panel Appmenu&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/rilian-la-te/vala-panel-appmenu&quot;&gt;rilian-la-te/vala-panel-appmenu&lt;/a&gt;
+&lt;br /&gt;&lt;a href=&quot;http://www.webupd8.org/2017/02/alternative-global-menu-for-mate-and.html&quot;&gt;webupd8&lt;/a&gt;
+&lt;br /&gt;&lt;a href=&quot;https://www.facebook.com/notes/ubuntu-indonesia/menginstall-vala-panel-appmenu-globalmenu-xfce-dan-mate/10154408411839594&quot;&gt;fb/ubuntu-indonesia&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;5-unity-launcher-folders&quot;&gt;5. Unity Launcher Folders&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;http://unity-folders.exceptionfound.com/&quot;&gt;unity-folders&lt;/a&gt;
+&lt;br /&gt;&lt;a href=&quot;http://www.omgubuntu.co.uk/2016/12/21-must-have-apps-ubuntu&quot;&gt;omgubuntu&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;6-shutter&quot;&gt;6. Shutter&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;http://shutter-project.org/&quot;&gt;shutter-project&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;7-etcher&quot;&gt;7. Etcher&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/resin-io/etcher&quot;&gt;resin-io/etcher&lt;/a&gt;
+&lt;br /&gt;&lt;a href=&quot;https://etcher.io/&quot;&gt;etcher.io&lt;/a&gt;
+&lt;br /&gt;&lt;a href=&quot;http://www.omgubuntu.co.uk/2016/09/etcher-image-writer-beta-release&quot;&gt;omgubuntu&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 14 Apr 2017 00:00:00 +0700</pubDate>
+        <link>http://localhost:4000/2017/04/14/casan-part-2.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/04/14/casan-part-2.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>QUCS - Electronics Simulation</title>
@@ -219,148 +291,6 @@ no changes added to commit &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;use &lt
         <pubDate>Fri, 07 Apr 2017 00:00:00 +0700</pubDate>
         <link>http://localhost:4000/2017/04/07/solve-commit-git.html</link>
         <guid isPermaLink="true">http://localhost:4000/2017/04/07/solve-commit-git.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>GIT Fundamentals</title>
-        <description>&lt;p&gt;Untuk menggunakan git pada terminal, pertama yang harus di lakukan adalah dengan membuat repository pada website github. Pembuatan repository di maksudkan untuk mendapatkan link atau tujuan.&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;git init
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;git add &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;git commit -m &lt;span class=&quot;s2&quot;&gt;&quot;Menambahkan semua files ke dalam repository&quot;&lt;/span&gt;
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;git remote add origin https://github.com/iputra/iputra.github.io.git
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;git push -u origin master
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Fri, 07 Apr 2017 00:00:00 +0700</pubDate>
-        <link>http://localhost:4000/2017/04/07/git-fundamentals.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/04/07/git-fundamentals.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Create Blog With Jekyll</title>
-        <description>&lt;h2 id=&quot;install-the-environment&quot;&gt;Install the Environment&lt;/h2&gt;
-
-&lt;p&gt;To create the website we need some tools, such as ruby environment, gem, and jekyll of course. okay, to install that let’s check it out&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Install Ruby from source to get the newer version
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;wget http://ftp.ruby-lang.org/pub/ruby/2.4/ruby-2.4.0.tar.gz
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;tar -xzvf ruby-2.4.0.tar.gz
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;ruby-2.4.0/
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;./configure
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;make
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;sudo make install
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;ruby -v
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Install gem from package manager
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;sudo apt install gem
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Install jekyll from gem
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;gem instal jekyll
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Find The page
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;wget https://github.com/kronik3r/daktilo/archive/master.zip
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;unzip master.zip
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Run with jekyll
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;daktilo-master
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;jekyll serve
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h2 id=&quot;create-the-post&quot;&gt;Create the post&lt;/h2&gt;
-
-&lt;p&gt;To create the post you need follow the format from the sample page, if not follow you can’t get the style for your post.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;add this header to every your post&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;---
-layout: post
-title: &quot;Your Title Here&quot;
-subtitle: &quot;Your Subtitle Here&quot;
-date: 2015-09-06
-categories: [design, tool]
----
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;i think it’s enough for create the page or blog with jekyll.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 07 Apr 2017 00:00:00 +0700</pubDate>
-        <link>http://localhost:4000/design/all/2017/04/07/create-blog-with-jekyll.html</link>
-        <guid isPermaLink="true">http://localhost:4000/design/all/2017/04/07/create-blog-with-jekyll.html</guid>
-        
-        
-        <category>design</category>
-        
-        <category>all</category>
-        
-      </item>
-    
-      <item>
-        <title>Install Haroopad</title>
-        <description>&lt;p&gt;Haroopad adalah sejenis teks editor, semacam nano, vim, sublime dkk. namun haroopad ini memiliki fungsi khusus untuk menulis dalama format markdown ( bagi yanb belum tau markdown itu apa bisa cari di google). Ketika menggunakan haroopad markdown yang kita ketikan akan langsung muncul tampilannya di sebelah IDE haroopad.&lt;/p&gt;
-
-&lt;p&gt;Haroopad ini memiliki tampilan yang bagus juga menarik gk bikin mata pusing atau bikin malas ngoding. Selain itu, haroopad memiliki tool - tool yang cukup membantu. Pertama, Tool Markdown syntax helper yang fungsinya akan membantu kita untuk menampilkan format dari sebuah syntax. ada berbagai macam format syntax markdown yang umum digunakan di tampilkan oleh syntax helper ini (pokoknya ini membantu banget). Kedua, haroopad memiliki tool untuk menampilkan line numbering. Walaupun ini kelihatan sepele tapi menurut gue line numbering ini bagus banget buat ngeliat progres kita ketika ngoding.&lt;/p&gt;
-
-&lt;p&gt;Oke itu hanya sedikit yang bisa gue bahas mengenai haroopad, sisanya bisa di eksplor sendiri.&lt;/p&gt;
-
-&lt;p&gt;Untuk Install haroopad caranya gampang banget. Ikutin aja kaya di bawah&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Create Directory
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;mkdir haroopad
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;haroopad
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Download the binary
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;c&quot;&gt;# for 64 bit&lt;/span&gt;
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;wget https://bitbucket.org/rhiokim/haroopad-download/downloads/haroopad-v0.13.1-x64.tar.gz
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;c&quot;&gt;# for 32 bit&lt;/span&gt;
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;wget https://bitbucket.org/rhiokim/haroopad-download/downloads/haroopad-v0.13.1-ia32.tar.gz
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Extract the compressed file
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;tar -zxvf haroopad-v0.13.1-x64.tar.gz
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;tar -zxvf control.tar.gz
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;tar -zxvf data.tar.gz
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Run The Program
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;usr/share/haroopad/haroopad
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Create Symlink
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;ln -s &lt;span class=&quot;nv&quot;&gt;$HOME&lt;/span&gt;/haroopad/usr/share/haroopad/haroopad
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-</description>
-        <pubDate>Thu, 06 Apr 2017 00:00:00 +0700</pubDate>
-        <link>http://localhost:4000/2017/04/06/install-haroopad.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/04/06/install-haroopad.html</guid>
         
         
       </item>
