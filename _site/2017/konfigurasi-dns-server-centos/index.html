@@ -68,6 +68,15 @@ edit file tersebut.</p>
 
 <p><img src="/img/006-file-var-named-named-tekom.png" alt="file var named named tekom" /></p>
 
+<p>edit file <code class="highlighter-rouge">/etc/resolv.conf</code> ganti isinya sama di bawah ini</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1"># IP nya sama kaya yang ada di file /etc/named.conf</span>
+<span class="n">nameserver</span> <span class="mi">192</span><span class="o">.</span><span class="mi">168</span><span class="o">.</span><span class="mi">3</span><span class="o">.</span><span class="mi">2</span></code></pre></figure>
+
+<p>Ubah owner file <code class="highlighter-rouge">/var/named/named.tekom</code> dari root menjadi named</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">chown</span> <span class="n">root</span><span class="ss">:named</span> <span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">named</span><span class="o">/</span><span class="n">named</span><span class="p">.</span><span class="nf">tekom</span></code></pre></figure>
+
 <p>Setelah selesai di edit. Jalanakan kembali service named dengan 
 menggunakan command <code class="highlighter-rouge">service named restart</code> atau <code class="highlighter-rouge">/etc/init.d/named restart</code>
 uji coba menggunakan dig dan lakukan ping</p>
@@ -77,10 +86,16 @@ uji coba menggunakan dig dan lakukan ping</p>
 
 <p><img src="/img/007-dig-ping.png" alt="dig ping" /></p>
 
+<p>Terima Kasih, teman - teman yang telah menghubungi saya atas kendala yang dihadapi.
+Karena kalian saya jadi banyak tahu dan bisa membantu lebih banyak orang dengan masalah 
+yang serupa..</p>
+
 <h5 id="source">Source</h5>
 <p>[1] <a href="https://www.digitalocean.com/community/tutorials/how-to-install-the-bind-dns-server-on-centos-6">digitalocean.com</a>
 <br />
-[2] <a href="https://askubuntu.com/questions/356813/dns-configuration-problem-bind9">askubuntu.com</a></p>
+[2] <a href="https://askubuntu.com/questions/356813/dns-configuration-problem-bind9">askubuntu.com</a>
+<br />
+[3] <a href="http://ask.xmodulo.com/configure-static-dns-centos-fedora.html">ask.xmodulo.com</a></p>
 
     </section>
 </article>

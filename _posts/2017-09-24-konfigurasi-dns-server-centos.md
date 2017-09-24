@@ -39,6 +39,17 @@ vi named.tekom
 {% endhighlight %}
 ![file var named named tekom](/img/006-file-var-named-named-tekom.png)
 
+edit file `/etc/resolv.conf` ganti isinya sama di bawah ini
+{% highlight ruby %}
+# IP nya sama kaya yang ada di file /etc/named.conf
+nameserver 192.168.3.2
+{% endhighlight %}
+
+Ubah owner file `/var/named/named.tekom` dari root menjadi named
+{% highlight ruby %}
+chown root:named /var/named/named.tekom
+{% endhighlight %}
+
 Setelah selesai di edit. Jalanakan kembali service named dengan 
 menggunakan command `service named restart` atau `/etc/init.d/named restart`
 uji coba menggunakan dig dan lakukan ping 
@@ -48,7 +59,13 @@ ping tekom.com
 {% endhighlight %}
 ![dig ping](/img/007-dig-ping.png)
 
+Terima Kasih, teman - teman yang telah menghubungi saya atas kendala yang dihadapi.
+Karena kalian saya jadi banyak tahu dan bisa membantu lebih banyak orang dengan masalah 
+yang serupa..
+
 ##### Source
 [1] [digitalocean.com](https://www.digitalocean.com/community/tutorials/how-to-install-the-bind-dns-server-on-centos-6)
 <br>
 [2] [askubuntu.com](https://askubuntu.com/questions/356813/dns-configuration-problem-bind9)
+<br>
+[3] [ask.xmodulo.com](http://ask.xmodulo.com/configure-static-dns-centos-fedora.html)
