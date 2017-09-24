@@ -21,6 +21,33 @@
       </item>
     
       <item>
+        <title>Packet Tracer From Source</title>
+        
+        
+          <description>&lt;h3 id=&quot;install&quot;&gt;Install&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Download the files
+&lt;br /&gt;Cisco Packet Tracer 6.3 &lt;a href=&quot;http://www.cs.rpi.edu/~kotfid/packettracer/LinuxUbuntu/PacketTracer63_linux.tar.gz&quot;&gt;cs.rpi.edu&lt;/a&gt;
+&lt;br /&gt;Cisco Packet Tracet 7.0 &lt;a href=&quot;https://drive.google.com/open?id=0B7zGwz0yWP8QZTVyTjRieGFFRHM&quot;&gt;32 bit gdrive&lt;/a&gt;
+ | &lt;a href=&quot;https://drive.google.com/open?id=0B7zGwz0yWP8QZWo2dGhjR2E3ck0&quot;&gt;64 bit gdrive&lt;/a&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Extract and configure&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;cd&lt;/span&gt; &lt;span class=&quot;sr&quot;&gt;/tmp
+cp ~/&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Downloads&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;PacketTracerXX_linux&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;tar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;gz&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;
+&lt;span class=&quot;nf&quot;&gt;tar&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;zxvf&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;PacketTracerXX_linux&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;tar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;gz&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;install&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+</description>
+        
+        <pubDate>Wed, 12 Apr 2017 00:00:00 +0700</pubDate>
+        <link>http://localhost:4000/2017/packet-tracer-from-source/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/packet-tracer-from-source/</guid>
+      </item>
+    
+      <item>
         <title>Welcome to Jekyll!</title>
         
         
