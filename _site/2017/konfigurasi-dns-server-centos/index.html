@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Casan - Konfigurasi DNS Server Centos</title>
+  <link rel="shortcut icon" href="/assets/images/favicon.ico">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="alternate" type="application/rss+xml" title="My Blog" href="/feed.xml">
+  <link rel="stylesheet" href="/assets/css/highlight.css">
+</head>
+<body>
+
+  <nav class="main-nav">
+    
+        <a href="/"> <span class="arrow">←</span> Home </a>
+    
+
+    
+        <a href="/about">About </a>
+    
+    <!-- <a class="cta" href="/feed.xml">Subscribe</a> -->
+</nav>
+
+
+  
+
+  <section id="wrapper" class="">
+    <article class="post">
+    <header>
+        <h1>Konfigurasi DNS Server Centos</h1>
+        <h2 class="headline">September 24, 2017</h2>
+    </header>
+    <section id="post-body">
+        <p>Install beberapa package yang dibutuhkan, hal ini 
+dilakukan jika menggunakan centos minimal yang baru 
+diinstall.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">yum</span> <span class="n">install</span> <span class="n">coreutils</span> <span class="n">net</span><span class="o">-</span><span class="n">tools</span> <span class="n">bind</span><span class="o">-</span><span class="n">utils</span></code></pre></figure>
+
+<p>Install package bind versi 9</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">yum</span> <span class="n">install</span> <span class="n">bind</span></code></pre></figure>
+
+<p>Edit file <code class="highlighter-rouge">/etc/named.conf</code> menjadi seperti gambar dibawah</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">vi</span> <span class="sr">/etc/n</span><span class="n">amed</span><span class="p">.</span><span class="nf">conf</span></code></pre></figure>
+
+<p><img src="/img/004-file-etc-named-conf.png" alt="file etc named conf" /></p>
+
+<p>Edit file <code class="highlighter-rouge">/etc/named.rfc1912.zone</code> untuk menambahkan dns 
+forward dan reverse dns.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">vi</span> <span class="sr">/etc/n</span><span class="n">amed</span><span class="p">.</span><span class="nf">rfc1912</span><span class="p">.</span><span class="nf">zones</span></code></pre></figure>
+
+<p><img src="/img/005-file-etc-named-rfc1912-zones.png" alt="file etc named rfc1912 zones" /></p>
+
+<p>Pergi ke directory <code class="highlighter-rouge">/var/named/</code> dan buat file baru bernama 
+<code class="highlighter-rouge">named.tekom</code> atau salin dari file <code class="highlighter-rouge">named.localhost</code>. kemudian 
+edit file tersebut.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">cd</span> <span class="sr">/var/n</span><span class="n">amed</span>
+<span class="n">cp</span> <span class="n">named</span><span class="p">.</span><span class="nf">localhost</span> <span class="n">named</span><span class="p">.</span><span class="nf">tekom</span>
+<span class="n">cp</span> <span class="n">named</span><span class="p">.</span><span class="nf">localhost</span> <span class="n">named</span><span class="o">.</span><span class="mi">192</span>
+<span class="n">vi</span> <span class="n">named</span><span class="p">.</span><span class="nf">tekom</span></code></pre></figure>
+
+<p><img src="/img/006-file-var-named-named-tekom.png" alt="file var named named tekom" /></p>
+
+<p>Setelah selesai di edit. Jalanakan kembali service named dengan 
+menggunakan command <code class="highlighter-rouge">service named restart</code> atau <code class="highlighter-rouge">/etc/init.d/named restart</code>
+uji coba menggunakan dig dan lakukan ping</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">dig</span> <span class="n">tekom</span><span class="p">.</span><span class="nf">com</span>
+<span class="n">ping</span> <span class="n">tekom</span><span class="p">.</span><span class="nf">com</span></code></pre></figure>
+
+<p><img src="/img/007-dig-ping.png" alt="dig ping" /></p>
+
+<h5 id="source">Source</h5>
+<p>[1] <a href="https://www.digitalocean.com/community/tutorials/how-to-install-the-bind-dns-server-on-centos-6">digitalocean.com</a>
+<br />
+[2] <a href="https://askubuntu.com/questions/356813/dns-configuration-problem-bind9">askubuntu.com</a></p>
+
+    </section>
+</article>
+<footer id="post-meta" class="clearfix">
+    <a href="/about">
+        <img class="avatar" src="/assets/images/ava.png">
+        <div>
+            <span class="dark">iputra</span>
+            <span>My Notes Since be FOSS Enthusiast</span>
+        </div>
+    </a>
+
+    <!-- <section id="sharing"> -->
+    <!--     <a class="twitter" href="https://twitter.com/intent/tweet?text=http://yourblog-domain.com/2017/konfigurasi-dns-server-centos/ - Konfigurasi DNS Server Centos by @YourTwitterUsername"><span class="icon-twitter"> Tweet</span></a>
+
+<a class="facebook" href="#" onclick="
+    window.open(
+      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+      'facebook-share-dialog',
+      'width=626,height=436');
+    return false;"><span class="icon-facebook-rect"> Share</span>
+</a> -->
+    <!-- </section> -->
+</footer>
+
+<!-- Disqus comments -->
+<!--  -->
+
+<!-- Archive post list -->
+<!--  -->
+
+
+  </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/highlight.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  <!-- <script> -->
+  <!--   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ -->
+  <!--   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), -->
+  <!--   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) -->
+  <!--   })(window,document,'script','//www.google&#45;analytics.com/analytics.js','ga'); -->
+  <!--  -->
+  <!--   ga('create', 'UA-XXXXXXXX-X', 'auto'); -->
+  <!--   ga('send', 'pageview'); -->
+  <!-- </script> -->
+</body>
+</html>
+
+
+

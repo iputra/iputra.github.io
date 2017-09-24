@@ -1,0 +1,26 @@
+<p>Cek interface yang tersedia dengan command <code class="highlighter-rouge">ifconfig -a</code>
+<img src="/img/001-interface-yang-tersedia.png" alt="Interface Yang Tersedia" /></p>
+
+<p>interface yang belum memiliki IP yaitu interface eth2. Sekarang 
+masuk ke directory <code class="highlighter-rouge">/etc/sysconfig/network-scripts/</code>. Lalu edit 
+atau buat file(kalau tidak tersedia) <code class="highlighter-rouge">ifcfg-eth2</code>. Dan lakukan 
+konfigurasi seperti gambar dibawah</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1"># Pastikan MAC Address yang digunakan sama seperti</span>
+<span class="c1"># yang ada pada file /etc/udev/rules.d/70-persistent-net.rules</span>
+<span class="n">cd</span> <span class="sr">/etc/s</span><span class="n">ysconfig</span><span class="o">/</span><span class="n">network</span><span class="o">-</span><span class="n">scripts</span>
+<span class="n">vi</span> <span class="n">ifcfg</span><span class="o">-</span><span class="n">eth2</span></code></pre></figure>
+
+<p><img src="/img/002-konfigurasi-ip-statik-interface-eth2.png" alt="Konfigurasi IP Statik Interface eth2" /></p>
+
+<p>kemudian restart service network dengan command <code class="highlighter-rouge">/etc/init.d/network restart</code>. 
+Maka sekarang ketika dilihat interface eth2 dengan command <code class="highlighter-rouge">ifconfig</code> 
+sudah memiliki IP seperti yang telah di konfigurasi. Dan ketika di coba ping 
+ke host OS akan mendapatkan response.</p>
+
+<p><img src="/img/003-cek-ping-ke-host-os.png" alt="Cek ping ke host OS" /></p>
+
+<h4 id="source">Source</h4>
+<p>[1] <a href="https://serverfault.com/questions/272968/centos-ifcfg-eth0-config-file-deleted-utility-to-recreate-it">serverfault.com</a>
+<br />
+[2] <a href="https://www.centos.org/docs/5/html/Deployment_Guide-en-US/s1-networkscripts-interfaces.html">centos.org</a></p>

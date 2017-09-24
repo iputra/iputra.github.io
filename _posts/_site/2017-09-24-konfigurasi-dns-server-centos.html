@@ -1,0 +1,41 @@
+<p>Install beberapa package yang dibutuhkan, hal ini 
+dilakukan jika menggunakan centos minimal yang baru 
+diinstall.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">yum</span> <span class="n">install</span> <span class="n">coreutils</span> <span class="n">net</span><span class="o">-</span><span class="n">tools</span> <span class="n">bind</span><span class="o">-</span><span class="n">utils</span></code></pre></figure>
+
+<p>Install package bind versi 9</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">yum</span> <span class="n">install</span> <span class="n">bind</span></code></pre></figure>
+
+<p>Edit file <code class="highlighter-rouge">/etc/named.conf</code> menjadi seperti gambar dibawah</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">vi</span> <span class="sr">/etc/n</span><span class="n">amed</span><span class="p">.</span><span class="nf">conf</span></code></pre></figure>
+
+<p><img src="/img/004-file-etc-named-conf.png" alt="file etc named conf" /></p>
+
+<p>Edit file <code class="highlighter-rouge">/etc/named.rfc1912.zone</code> untuk menambahkan dns 
+forward dan reverse dns.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">vi</span> <span class="sr">/etc/n</span><span class="n">amed</span><span class="p">.</span><span class="nf">rfc1912</span><span class="p">.</span><span class="nf">zones</span></code></pre></figure>
+
+<p><img src="/img/005-file-etc-named-rfc1912-zones.png" alt="file etc named rfc1912 zones" /></p>
+
+<p>Pergi ke directory <code class="highlighter-rouge">/var/named/</code> dan buat file baru bernama 
+<code class="highlighter-rouge">named.tekom</code> atau salin dari file <code class="highlighter-rouge">named.localhost</code>. kemudian 
+edit file tersebut.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">cd</span> <span class="sr">/var/n</span><span class="n">amed</span>
+<span class="n">cp</span> <span class="n">named</span><span class="p">.</span><span class="nf">localhost</span> <span class="n">named</span><span class="p">.</span><span class="nf">tekom</span>
+<span class="n">cp</span> <span class="n">named</span><span class="p">.</span><span class="nf">localhost</span> <span class="n">named</span><span class="o">.</span><span class="mi">192</span>
+<span class="n">vi</span> <span class="n">named</span><span class="p">.</span><span class="nf">tekom</span></code></pre></figure>
+
+<p><img src="/img/006-file-var-named-named-tekom.png" alt="file var named named tekom" /></p>
+
+<p>Setelah selesai di edit. Jalanakan kembali service named dengan 
+menggunakan command <code class="highlighter-rouge">service named restart</code> atau <code class="highlighter-rouge">/etc/init.d/named restart</code>
+uji coba menggunakan dig dan lakukan ping</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">dig</span> <span class="n">tekom</span><span class="p">.</span><span class="nf">com</span>
+<span class="n">ping</span> <span class="n">tekom</span><span class="p">.</span><span class="nf">com</span></code></pre></figure>
+
