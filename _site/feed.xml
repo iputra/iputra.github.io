@@ -7,6 +7,22 @@
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Two Three Tier Architecture</title>
+        
+        
+          <description>&lt;p&gt;three-tier merupakan sebuah design pattern software. three-tier architecture 
+juga merupakan client-server arsitektur yang mana fungsi proses logika,
+pengaksesan data, penyimpanan data komputer dan user interface di kembangkan 
+dan di pelihara oleh module yang terpisah dan di batasi oleh sebuah platform&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Tue, 26 Sep 2017 00:00:00 +0700</pubDate>
+        <link>http://localhost:4000/2017/two-three-tier-architecture/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/two-three-tier-architecture/</guid>
+      </item>
+    
+      <item>
         <title>Konfigurasi IP Static Centos</title>
         
         
