@@ -12,48 +12,64 @@ title : "Repositori Centos 6.7"
 # If the mirrorlist= does not work for you, as a fall back you can try the 
 # remarked out baseurl= line instead.
 
-[base]
-name=CentOS-$releasever - Base
-mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=os&infra=$infra
-#baseurl=http://mirror.centos.org/centos/$releasever/os/$basearch/
-gpgcheck=1
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-6
+# CentOS-Base.repo
+# http://kambing.ui.ac.id/centos/6/
 
-#released updates 
-[updates]
-name=CentOS-$releasever - Updates
-mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=updates&infra=$infra
-#baseurl=http://mirror.centos.org/centos/$releasever/updates/$basearch/
+[Add Ons]
+name=CentOS
+baseurl=http://kambing.ui.ac.id/centos/6/addons/x86_64/
+enabled=1
 gpgcheck=1
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-6
+gpgkey=http://kambing.ui.ac.id/centos/RPM-GPG-KEY-CentOS-6
 
-#additional packages that may be useful
-[extras]
-name=CentOS-$releasever - Extras
-mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=extras&infra=$infra
-#baseurl=http://mirror.centos.org/centos/$releasever/extras/$basearch/
+[CentOS Plus]
+name=CentOS
+baseurl=http://kambing.ui.ac.id/centos/6/centosplus/x86_64/
+enabled=1
 gpgcheck=1
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-6
+gpgkey=http://kambing.ui.ac.id/centos/RPM-GPG-KEY-CentOS-6
 
-#additional packages that extend functionality of existing packages
-[centosplus]
-name=CentOS-$releasever - Plus
-mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=centosplus&infra=$infra
-#baseurl=http://mirror.centos.org/centos/$releasever/centosplus/$basearch/
+[Contrib]
+name=CentOS
+baseurl=http://kambing.ui.ac.id/centos/6/contrib/x86_64/
+enabled=1
 gpgcheck=1
-enabled=0
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-6
+gpgkey=http://kambing.ui.ac.id/centos/RPM-GPG-KEY-CentOS-6
 
-#contrib - packages by Centos Users
-[contrib]
-name=CentOS-$releasever - Contrib
-mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=contrib&infra=$infra
-#baseurl=http://mirror.centos.org/centos/$releasever/contrib/$basearch/
+[Extras]
+name=CentOS
+baseurl=http://kambing.ui.ac.id/centos/6/extras/x86_64/
+enabled=1
 gpgcheck=1
-enabled=0
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-6
+gpgkey=http://kambing.ui.ac.id/centos/RPM-GPG-KEY-CentOS-6
+
+[Fasttrack]
+name=CentOS
+baseurl=http://kambing.ui.ac.id/centos/6/fasttrack/x86_64/
+enabled=1
+gpgcheck=1
+gpgkey=http://kambing.ui.ac.id/centos/RPM-GPG-KEY-CentOS-6
+
+[OS]
+name=CentOS
+baseurl=http://kambing.ui.ac.id/centos/6/os/x86_64/
+enabled=1
+gpgcheck=1
+gpgkey=http://kambing.ui.ac.id/centos/RPM-GPG-KEY-CentOS-6
+
+[Update]
+name=CentOS
+baseurl=http://kambing.ui.ac.id/centos/6/updates/x86_64/
+enabled=1
+gpgcheck=1
+gpgkey=http://kambing.ui.ac.id/centos/RPM-GPG-KEY-CentOS-6
+
 ```
 
 {% highlight shell %}
-wget http://iputra.github.io/files/CentOS-Base.repo
+# Repository lokal
+curl http://iputra.github.io/files/CentOS-Base.repo > /etc/yum.repos.d/CentOS-Base.repo
+
+# Repository origin
+curl http://iputra.github.io/files/CentOS-Base.repo.orig > /etc/yum.repos.d/CentOS-Base.repo
 {% endhighlight %}
