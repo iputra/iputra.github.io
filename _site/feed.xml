@@ -7,19 +7,25 @@
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
-        <title>Two Three Tier Architecture</title>
+        <title>Repositori Centos 6.7</title>
         
         
-          <description>&lt;p&gt;three-tier merupakan sebuah design pattern software. three-tier architecture 
-juga merupakan client-server arsitektur yang mana fungsi proses logika,
-pengaksesan data, penyimpanan data komputer dan user interface di kembangkan 
-dan di pelihara oleh module yang terpisah dan di batasi oleh sebuah platform&lt;/p&gt;
+          <description>&lt;p&gt;```&lt;/p&gt;
+&lt;h1 id=&quot;centos-baserepo&quot;&gt;CentOS-Base.repo&lt;/h1&gt;
+&lt;p&gt;#&lt;/p&gt;
+&lt;h1 id=&quot;the-mirror-system-uses-the-connecting-ip-address-of-the-client-and-the&quot;&gt;The mirror system uses the connecting IP address of the client and the&lt;/h1&gt;
+&lt;h1 id=&quot;update-status-of-each-mirror-to-pick-mirrors-that-are-updated-to-and&quot;&gt;update status of each mirror to pick mirrors that are updated to and&lt;/h1&gt;
+&lt;h1 id=&quot;geographically-close-to-the-client--you-should-use-this-for-centos-updates&quot;&gt;geographically close to the client.  You should use this for CentOS updates&lt;/h1&gt;
+&lt;h1 id=&quot;unless-you-are-manually-picking-other-mirrors&quot;&gt;unless you are manually picking other mirrors.&lt;/h1&gt;
+&lt;p&gt;#&lt;/p&gt;
+&lt;h1 id=&quot;if-the-mirrorlist-does-not-work-for-you-as-a-fall-back-you-can-try-the&quot;&gt;If the mirrorlist= does not work for you, as a fall back you can try the&lt;/h1&gt;
+&lt;h1 id=&quot;remarked-out-baseurl-line-instead&quot;&gt;remarked out baseurl= line instead.&lt;/h1&gt;
 
 </description>
         
-        <pubDate>Tue, 26 Sep 2017 00:00:00 +0700</pubDate>
-        <link>http://localhost:4000/2017/two-three-tier-architecture/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/two-three-tier-architecture/</guid>
+        <pubDate>Sun, 01 Oct 2017 00:00:00 +0700</pubDate>
+        <link>http://localhost:4000/2017/Repositori-Centos-67/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/Repositori-Centos-67/</guid>
       </item>
     
       <item>
