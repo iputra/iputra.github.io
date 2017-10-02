@@ -2,7 +2,7 @@
 title : "Konfigurasi Virtual Host Centos"
 ---
 edit file `/etc/httpd/conf/httpd.conf`
-{% highlight shell %}
+```
    1 #
 .... 
  990 NameVirtualHost bintang:80
@@ -24,7 +24,7 @@ edit file `/etc/httpd/conf/httpd.conf`
     CustomLog logs/iputra.io-access_log common
 </VirtualHost>
 1026 
-{% endhighlight %}
+```
 
 sekarang edit untuk https nya pada file `/etc/httpd/conf.d/ssl.conf`
 {% highlight shell %}

@@ -24,8 +24,48 @@
 </description>
         
         <pubDate>Sun, 01 Oct 2017 00:00:00 +0700</pubDate>
-        <link>http://localhost:4000/2017/Repositori-Centos-67/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/Repositori-Centos-67/</guid>
+        <link>http://localhost:4000/2017/repositori-centos-67/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/repositori-centos-67/</guid>
+      </item>
+    
+      <item>
+        <title>Konfigurasi Web Server dan OpenSSL</title>
+        
+        
+          <description>
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;yum install httpd openssl mod_ssl&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+</description>
+        
+        <pubDate>Sun, 01 Oct 2017 00:00:00 +0700</pubDate>
+        <link>http://localhost:4000/2017/konfigurasi-web-server-dan-openssl/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/konfigurasi-web-server-dan-openssl/</guid>
+      </item>
+    
+      <item>
+        <title>Konfigurasi Virtual Host Centos</title>
+        
+        
+          <description>&lt;p&gt;edit file &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/httpd/conf/httpd.conf&lt;/code&gt;
+```
+   1 #
+…. 
+ 990 NameVirtualHost bintang:80
+….
+1010
+&amp;lt;VirtualHost *:80&amp;gt;
+    ServerName www.iputra.io
+    ServerAdmin admin@iputra.io
+    DocumentRoot /var/www/html/iputra.io/public_html
+    ErrorLog logs/iputra.io-error_log
+    CustomLog logs/iputra.io-access_log common
+&amp;lt;/VirtualHost&amp;gt;&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Sun, 01 Oct 2017 00:00:00 +0700</pubDate>
+        <link>http://localhost:4000/2017/konfigurasi-virtual-host-centos/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/konfigurasi-virtual-host-centos/</guid>
       </item>
     
       <item>
