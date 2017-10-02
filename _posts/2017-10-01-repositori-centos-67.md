@@ -1,5 +1,5 @@
 ---
-title : "Repositori Centos 6.7"
+title : "Repositori Lokal Centos 6.7"
 ---
 ```
 # CentOS-Base.repo

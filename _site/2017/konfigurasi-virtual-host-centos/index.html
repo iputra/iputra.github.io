@@ -45,11 +45,21 @@ Buat direktori baru pada <code class="highlighter-rouge">/var/www/html</code></p
 mkdir -p iputra.io/public_html blog.iputra.io/public_html</code></pre></figure>
 
 <p>kemudian pindahkan file yang ada pada <code class="highlighter-rouge">/var/www/html</code> ke dalam 
-<code class="highlighter-rouge">iputra.io/public_html</code></p>
+<code class="highlighter-rouge">iputra.io/public_html</code>
+&lt;!–</p>
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell">cp background.png favicon.ico split.css index.html iputra.io/public_html</code></pre></figure>
 
-<p>tambahkan file baru ke dalam direktori <code class="highlighter-rouge">/var/www/html/blog.iputra.io/public_html</code></p>
+<p>–&gt;</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">cp index.html iputra.io/public_html</code></pre></figure>
+
+<p>tambahkan file index.html baru ke dalam direktori <code class="highlighter-rouge">/var/www/html/blog.iputra.io/public_html</code></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">cd</span> /var/www/html/blog.iputra.io/public_html
+<span class="nb">echo</span> <span class="s2">"hello world"</span> &gt; index.html</code></pre></figure>
+
+<!-- 
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">cd</span> /var/www/html/blog.iputra.io/public_html
 curl -O https://iputra.github.io/f/bio/ava.png <span class="se">\</span>
@@ -57,6 +67,8 @@ curl -O https://iputra.github.io/f/bio/ava.png <span class="se">\</span>
 -O https://iputra.github.io/f/bio/favicon.ico <span class="se">\</span>
 -O https://iputra.github.io/f/bio/style.css <span class="se">\</span>
 -O https://iputra.github.io/f/bio/index.html</code></pre></figure>
+
+-->
 
 <p>edit file <code class="highlighter-rouge">/etc/httpd/conf/httpd.conf</code></p>
 <div class="highlighter-rouge"><pre class="highlight"><code>   1 #

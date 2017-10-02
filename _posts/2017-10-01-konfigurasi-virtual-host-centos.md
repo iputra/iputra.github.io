@@ -12,9 +12,11 @@ mkdir -p iputra.io/public_html blog.iputra.io/public_html
 
 kemudian pindahkan file yang ada pada `/var/www/html` ke dalam 
 `iputra.io/public_html`
-<!-- {% highlight shell %} -->
-<!-- cp background.png favicon.ico split.css index.html iputra.io/public_html -->
-<!-- {% endhighlight %} -->
+<!--
+{% highlight shell %}
+cp background.png favicon.ico split.css index.html iputra.io/public_html
+{% endhighlight %}
+-->
 
 {% highlight shell %}
 cp index.html iputra.io/public_html
