@@ -46,9 +46,9 @@
 135 <span class="c">#Listen 12.34.56.78:80</span>
 136 Listen 192.168.3.2:80
 ... 
-262 ServerAdmin admin@tekom.com
+262 ServerAdmin admin@iputra.io
 ... 
-276 ServerName www.tekom.com:80</code></pre></figure>
+276 ServerName www.iputra.io:80</code></pre></figure>
 
 <p>Buat file <code class="highlighter-rouge">index.html</code> pada direktori <code class="highlighter-rouge">/var/www/html</code>
 kemudian isi seperti code berikut</p>
@@ -63,10 +63,13 @@ curl -O https://iputra.github.io/f/io/background.png \
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell">service httpd restart</code></pre></figure>
 
-<p>Jika domain <code class="highlighter-rouge">tekom.com</code> tidak dapat diakses matikan firewall 
+<p>Jika domain <code class="highlighter-rouge">iputra.io</code> tidak dapat diakses matikan firewall 
 atau edit file <code class="highlighter-rouge">/etc/sysconfig/iptables</code></p>
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell">service iptables stop</code></pre></figure>
+
+<p>dan tampilan dari browser akan seperti berikut
+<img src="/img/009-iputra-io.png" alt="tampilan iputra.io" /></p>
 
 <!-- 
 jika ingin mengedit file firewal bisa dengan mengisi konfigurasi 
@@ -97,13 +100,15 @@ cp server.key /etc/pki/tls/private</code></pre></figure>
  18 Listen 192.168.3.2:443
 ...
  77 DocumentRoot <span class="s2">"/var/www/html"</span>
- 78 ServerName www.tekom.com:443
+ 78 ServerName www.iputra.io:443
 ... 
 105 SSLCertificateFile /etc/pki/tls/certs/server.crt
 ...
 112 SSLCertificateKeyFile /etc/pki/tls/private/server.key</code></pre></figure>
 
-<p>jika sudah restart service httpd</p>
+<p>jika sudah restart service httpd dan jalankan pada browser host 
+OS maka akan ada simbol kunci disamping url.
+<img src="/img/011-https-iputra-io.png" alt="tampilan https://www.iputra.io" /></p>
 
     </section>
 </article>

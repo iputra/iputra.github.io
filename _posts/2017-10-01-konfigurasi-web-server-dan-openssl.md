@@ -14,9 +14,9 @@ edit file `/etc/httpd/conf/httpd.conf`
 135 #Listen 12.34.56.78:80
 136 Listen 192.168.3.2:80
 ... 
-262 ServerAdmin admin@tekom.com
+262 ServerAdmin admin@iputra.io
 ... 
-276 ServerName www.tekom.com:80
+276 ServerName www.iputra.io:80
 {% endhighlight %}
 
 Buat file `index.html` pada direktori `/var/www/html`
@@ -34,11 +34,14 @@ Restart service httpd dengan menggunakan command berikut
 service httpd restart
 {% endhighlight %}
 
-Jika domain `tekom.com` tidak dapat diakses matikan firewall 
+Jika domain `iputra.io` tidak dapat diakses matikan firewall 
 atau edit file `/etc/sysconfig/iptables`
 {% highlight shell %}
 service iptables stop
 {% endhighlight %}
+
+dan tampilan dari browser akan seperti berikut
+![tampilan iputra.io](/img/009-iputra-io.png)
 
 <!-- 
 jika ingin mengedit file firewal bisa dengan mengisi konfigurasi 
@@ -70,11 +73,13 @@ edit file `/etc/httpd/conf.d/ssl.conf`
  18 Listen 192.168.3.2:443
 ...
  77 DocumentRoot "/var/www/html"
- 78 ServerName www.tekom.com:443
+ 78 ServerName www.iputra.io:443
 ... 
 105 SSLCertificateFile /etc/pki/tls/certs/server.crt
 ...
 112 SSLCertificateKeyFile /etc/pki/tls/private/server.key
 {% endhighlight %}
 
-jika sudah restart service httpd
+jika sudah restart service httpd dan jalankan pada browser host 
+OS maka akan ada simbol kunci disamping url.
+![tampilan https://www.iputra.io](/img/011-https-iputra-io.png)
