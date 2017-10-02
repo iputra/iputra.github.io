@@ -38,6 +38,7 @@ atau edit file `/etc/sysconfig/iptables`
 service iptables stop
 {% endhighlight %}
 
+<!-- 
 jika ingin mengedit file firewal bisa dengan mengisi konfigurasi 
 sebagai berikut 
 {% highlight shell %}
@@ -48,6 +49,7 @@ sebagai berikut
 -A INPUT -p tcp -m tcp --dport 80 -j ACCEPT
 -A INPUT -p tcp -m tcp --dport 443 -j ACCEPT
 {% endhighlight %}
+-->
 
 # Konfigurasi OpenSSL
 Masuk ke direktori `/etc/pki/tls/certs`
