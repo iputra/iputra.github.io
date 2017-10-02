@@ -12,11 +12,20 @@ mkdir -p iputra.io/public_html blog.iputra.io/public_html
 
 kemudian pindahkan file yang ada pada `/var/www/html` ke dalam 
 `iputra.io/public_html`
+<!-- {% highlight shell %} -->
+<!-- cp background.png favicon.ico split.css index.html iputra.io/public_html -->
+<!-- {% endhighlight %} -->
+
 {% highlight shell %}
-cp background.png favicon.ico split.css index.html iputra.io/public_html
+cp index.html iputra.io/public_html
 {% endhighlight %}
 
-tambahkan file baru ke dalam direktori `/var/www/html/blog.iputra.io/public_html`
+tambahkan file index.html baru ke dalam direktori `/var/www/html/blog.iputra.io/public_html`
+{% highlight shell %}
+cd /var/www/html/blog.iputra.io/public_html
+echo "hello world" > index.html
+{% endhighlight %}
+<!-- 
 {% highlight shell %}
 cd /var/www/html/blog.iputra.io/public_html
 curl -O https://iputra.github.io/f/bio/ava.png \
@@ -25,6 +34,7 @@ curl -O https://iputra.github.io/f/bio/ava.png \
 -O https://iputra.github.io/f/bio/style.css \
 -O https://iputra.github.io/f/bio/index.html
 {% endhighlight %}
+-->
 
 edit file `/etc/httpd/conf/httpd.conf`
 ```

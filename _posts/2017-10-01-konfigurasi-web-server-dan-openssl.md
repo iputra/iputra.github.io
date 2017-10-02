@@ -21,6 +21,11 @@ edit file `/etc/httpd/conf/httpd.conf`
 
 Buat file `index.html` pada direktori `/var/www/html`
 kemudian isi seperti code berikut
+{% highlight shell %}
+cd /var/www/html
+echo "Halo Dunia" > index.html
+{% endhighlight %}
+<!--
 {% highlight html %}
 cd /var/www/html
 curl -O https://iputra.github.io/f/io/background.png \
@@ -28,6 +33,7 @@ curl -O https://iputra.github.io/f/io/background.png \
 -O https://iputra.github.io/f/io/split.css \
 -O https://iputra.github.io/f/io/index.html
 {% endhighlight %}
+-->
 
 Restart service httpd dengan menggunakan command berikut
 {% highlight shell %}
