@@ -1,6 +1,27 @@
 ---
 title : "Konfigurasi Virtual Host Centos"
 ---
+Buat direktori baru pada /var/www/html 
+{% highlight shell %}
+cd /var/www/html
+mkdir -p iputra.io/public_html blog.iputra.io/public_html
+{% endhighlight %}
+
+kemudian pindahkan file yang ada pada /var/www/html ke dalam 
+iputra.io/public_html
+{% highlight shell %}
+cp background.png favicon.ico split.css index.html iputra.io/public_html
+{% endhighlight %}
+
+tambahkan file baru ke dalam direktori /var/www/html/blog.iputra.io/public_html
+{% highlight shell %}
+curl -O https://iputra.github.io/f/bio/ava.png \
+-O https://iputra.github.io/f/bio/ava@2x.png \
+-O https://iputra.github.io/f/bio/favicon.ico \
+-O https://iputra.github.io/f/bio/style.css \
+-O https://iputra.github.io/f/bio/index.html
+{% endhighlight %}
+
 edit file `/etc/httpd/conf/httpd.conf`
 ```
    1 #
@@ -30,9 +51,11 @@ sekarang edit untuk https nya pada file `/etc/httpd/conf.d/ssl.conf`
 {% highlight shell %}
   1 #
 ...
- 77 DocumentRoot "/var/www/html"
+ 77 DocumentRoot "/var/www/html/iputra.io/public_html"
  78 ServerName www.iputra.io:443
 {% endhighlight %}
+
+jika sudah restart service httpd
 
 [1] [digitalocean.com](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-centos-6)
 [2] [digicert.com](https://www.digicert.com/ssl-support/apache-multiple-ssl-certificates-using-sni.htm)

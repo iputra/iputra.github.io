@@ -22,9 +22,11 @@ edit file `/etc/httpd/conf/httpd.conf`
 Buat file `index.html` pada direktori `/var/www/html`
 kemudian isi seperti code berikut
 {% highlight html %}
-<html>
-    <h1>Hello, Ikhsan</h1>
-<html>
+cd /var/www/html
+curl -O https://iputra.github.io/f/io/background.png \
+-O https://iputra.github.io/f/io/favicon.ico \
+-O https://iputra.github.io/f/io/split.css \
+-O https://iputra.github.io/f/io/index.html
 {% endhighlight %}
 
 Restart service httpd dengan menggunakan command berikut
@@ -74,3 +76,5 @@ edit file `/etc/httpd/conf.d/ssl.conf`
 ...
 112 SSLCertificateKeyFile /etc/pki/tls/private/server.key
 {% endhighlight %}
+
+jika sudah restart service httpd
