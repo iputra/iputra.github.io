@@ -68,8 +68,8 @@ gpgkey=http://kambing.ui.ac.id/centos/RPM-GPG-KEY-CentOS-6
 
 {% highlight shell %}
 # Repository lokal
-curl http://iputra.github.io/files/CentOS-Base.repo > /etc/yum.repos.d/CentOS-Base.repo
+curl https://iputra.github.io/files/CentOS-Base.repo > /etc/yum.repos.d/CentOS-Base.repo
 
 # Repository origin
-curl http://iputra.github.io/files/CentOS-Base.repo.orig > /etc/yum.repos.d/CentOS-Base.repo
+curl https://iputra.github.io/files/CentOS-Base.repo.orig > /etc/yum.repos.d/CentOS-Base.repo
 {% endhighlight %}

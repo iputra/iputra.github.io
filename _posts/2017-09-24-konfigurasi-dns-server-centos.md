@@ -69,3 +69,4 @@ yang serupa..
 [2] [askubuntu.com](https://askubuntu.com/questions/356813/dns-configuration-problem-bind9)
 <br>
 [3] [ask.xmodulo.com](http://ask.xmodulo.com/configure-static-dns-centos-fedora.html)
+[4] [lisenet.com](https://www.lisenet.com/2015/setup-bind-dns-server-on-centos-6/)
