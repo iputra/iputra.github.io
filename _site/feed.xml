@@ -46,10 +46,9 @@
         <title>Konfigurasi Virtual Host Centos</title>
         
         
-          <description>&lt;p&gt;Buat direktori baru pada &lt;code class=&quot;highlighter-rouge&quot;&gt;/var/www/html&lt;/code&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /var/www/html
-mkdir -p iputra.io/public_html blog.iputra.io/public_html&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+          <description>&lt;blockquote&gt;
+  &lt;p&gt;“Knowing is not enough, we must apply. Willing is not enough, we must do”. - Johann Wolfgang von Goethe&lt;/p&gt;
+&lt;/blockquote&gt;
 
 </description>
         

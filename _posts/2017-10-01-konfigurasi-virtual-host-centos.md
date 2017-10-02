@@ -1,6 +1,9 @@
 ---
 title : "Konfigurasi Virtual Host Centos"
 ---
+> "Knowing is not enough, we must apply. Willing is not enough, we must do". - Johann Wolfgang von Goethe
+
+<br>
 Buat direktori baru pada `/var/www/html`
 {% highlight shell %}
 cd /var/www/html
@@ -65,4 +68,5 @@ dan jika diakses `blog.iputra.io` maka akan seperti ini
 ![Tampilan blog.iputra.io](/img/010-blog-iputra-io.png)
 
 [1] [digitalocean.com](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-centos-6)
+<br>
 [2] [digicert.com](https://www.digicert.com/ssl-support/apache-multiple-ssl-certificates-using-sni.htm)
