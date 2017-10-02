@@ -34,7 +34,25 @@
         <h2 class="headline">October 1, 2017</h2>
     </header>
     <section id="post-body">
-        <p>edit file <code class="highlighter-rouge">/etc/httpd/conf/httpd.conf</code></p>
+        <p>Buat direktori baru pada /var/www/html</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">cd</span> /var/www/html
+mkdir -p iputra.io/public_html blog.iputra.io/public_html</code></pre></figure>
+
+<p>kemudian pindahkan file yang ada pada /var/www/html ke dalam 
+iputra.io/public_html</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">cp background.png favicon.ico split.css index.html iputra.io/public_html</code></pre></figure>
+
+<p>tambahkan file baru ke dalam direktori /var/www/html/blog.iputra.io/public_html</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">curl -O https://iputra.github.io/f/bio/ava.png <span class="se">\</span>
+-O https://iputra.github.io/f/bio/ava@2x.png <span class="se">\</span>
+-O https://iputra.github.io/f/bio/favicon.ico <span class="se">\</span>
+-O https://iputra.github.io/f/bio/style.css <span class="se">\</span>
+-O https://iputra.github.io/f/bio/index.html</code></pre></figure>
+
+<p>edit file <code class="highlighter-rouge">/etc/httpd/conf/httpd.conf</code></p>
 <div class="highlighter-rouge"><pre class="highlight"><code>   1 #
 .... 
  990 NameVirtualHost bintang:80
@@ -63,8 +81,10 @@
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell">  1 <span class="c">#</span>
 ...
- 77 DocumentRoot <span class="s2">"/var/www/html"</span>
+ 77 DocumentRoot <span class="s2">"/var/www/html/iputra.io/public_html"</span>
  78 ServerName www.iputra.io:443</code></pre></figure>
+
+<p>jika sudah restart service httpd</p>
 
 <p>[1] <a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-centos-6">digitalocean.com</a>
 [2] <a href="https://www.digicert.com/ssl-support/apache-multiple-ssl-certificates-using-sni.htm">digicert.com</a></p>

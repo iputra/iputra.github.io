@@ -46,20 +46,10 @@
         <title>Konfigurasi Virtual Host Centos</title>
         
         
-          <description>&lt;p&gt;edit file &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/httpd/conf/httpd.conf&lt;/code&gt;
-```
-   1 #
-…. 
- 990 NameVirtualHost bintang:80
-….
-1010
-&amp;lt;VirtualHost *:80&amp;gt;
-    ServerName www.iputra.io
-    ServerAdmin admin@iputra.io
-    DocumentRoot /var/www/html/iputra.io/public_html
-    ErrorLog logs/iputra.io-error_log
-    CustomLog logs/iputra.io-access_log common
-&amp;lt;/VirtualHost&amp;gt;&lt;/p&gt;
+          <description>&lt;p&gt;Buat direktori baru pada /var/www/html&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /var/www/html
+mkdir -p iputra.io/public_html blog.iputra.io/public_html&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 </description>
         

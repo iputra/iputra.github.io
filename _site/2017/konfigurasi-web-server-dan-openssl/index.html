@@ -53,9 +53,11 @@
 <p>Buat file <code class="highlighter-rouge">index.html</code> pada direktori <code class="highlighter-rouge">/var/www/html</code>
 kemudian isi seperti code berikut</p>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;html&gt;</span>
-    <span class="nt">&lt;h1&gt;</span>Hello, Ikhsan<span class="nt">&lt;/h1&gt;</span>
-<span class="nt">&lt;html&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html">cd /var/www/html
+curl -O https://iputra.github.io/f/io/background.png \
+-O https://iputra.github.io/f/io/favicon.ico \
+-O https://iputra.github.io/f/io/split.css \
+-O https://iputra.github.io/f/io/index.html</code></pre></figure>
 
 <p>Restart service httpd dengan menggunakan command berikut</p>
 
@@ -66,8 +68,9 @@ atau edit file <code class="highlighter-rouge">/etc/sysconfig/iptables</code></p
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell">service iptables stop</code></pre></figure>
 
-<p>jika ingin mengedit file firewal bisa dengan mengisi konfigurasi 
-sebagai berikut</p>
+<!-- 
+jika ingin mengedit file firewal bisa dengan mengisi konfigurasi 
+sebagai berikut 
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell">-A INPUT -p udp -m state --state NEW --dport 53 -j ACCEPT
 -A INPUT -p tcp -m state --state NEW --dport 53 -j ACCEPT
@@ -75,6 +78,8 @@ sebagai berikut</p>
 -A INPUT -p udp -m state --state NEW --dport 953 -j ACCEPT
 -A INPUT -p tcp -m tcp --dport 80 -j ACCEPT
 -A INPUT -p tcp -m tcp --dport 443 -j ACCEPT</code></pre></figure>
+
+-->
 
 <h1 id="konfigurasi-openssl">Konfigurasi OpenSSL</h1>
 <p>Masuk ke direktori <code class="highlighter-rouge">/etc/pki/tls/certs</code></p>
@@ -98,6 +103,7 @@ cp server.key /etc/pki/tls/private</code></pre></figure>
 ...
 112 SSLCertificateKeyFile /etc/pki/tls/private/server.key</code></pre></figure>
 
+<p>jika sudah restart service httpd</p>
 
     </section>
 </article>
