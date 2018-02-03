@@ -1,0 +1,232 @@
+body {
+    background-color: #fffffa;
+    font-family: Roboto;
+    margin: 0;
+}
+
+h1 {
+    font-weight: 100;
+}
+
+h2 {
+    font-weight: 100;
+}
+
+h3 {
+    font-weight: 100;
+}
+
+.container {
+    margin: 0 15%;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.nav {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1E8BC3;
+    border-bottom: 1px solid rgb(185, 185, 185);
+}
+
+.brown {
+    background-color: brown;
+}
+
+.brown a:hover {
+    background-color: rgb(158, 29, 29);
+}
+
+.brown .active {
+    background-color: rgb(148, 28, 28);
+}
+
+.white {
+    background-color: white;
+}
+
+.white li a {
+    color: #1E8BC3;
+}
+
+.white li[class="active"] a {
+    color: rgb(102, 97, 97);
+}
+
+.color-gradient  {
+    background-color: linear-gradient(#1E8BC3, #8E44AD);
+}
+
+.txt-gradient {
+    color: transparent;
+    background: linear-gradient(to right bottom,#1E8BC3,#8E44AD);
+    background-clip: text;
+}
+
+.white a:hover, .white li[class="active"] a:hover {
+    color: rgb(29, 29, 29);
+    background-color: white;
+}
+
+.white .active {
+    background-color: white;
+}
+
+.purple {
+    background-color: #8E44AD;
+}
+
+.purple a:hover {
+    background-color: rgb(110, 52, 105);
+}
+
+.purple .active {
+    background-color: rgb(66, 17, 61);
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #fffffa;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #34495E;
+    color: #fffffa;
+}
+
+.active {
+    background-color: #2574A9;
+}
+
+p, label {
+    color: #778899;
+    text-align: justify;
+}
+/*
+.btn {
+    border-radius: 4px;
+    background-color: #1E8BC3;
+    border: none;
+    color: #fffffa;
+    box-sizing: border-box; 
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    font-size: 14px;
+    padding: 10px 100px;
+    margin-bottom: 15px;
+    margin-right: 20px;
+    cursor: pointer; 
+}*/
+
+.div1 {
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+.md-4 {
+    float: left;
+    width: 32%;
+    margin-bottom: 10px;
+    padding-right: 2%;
+}
+
+.md-4-last {
+    padding-right: 0;
+}
+
+.btn {
+    border-radius: 4px;
+    background-color: #1E8BC3;
+    color: #ffa;
+    border: none;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    width: 100%;
+    height: 40px;
+}
+
+.btn:hover {
+    background-color: #2574A9;
+}
+
+.btn:active {
+    background-color: #34495E;
+}
+
+.secondary-color {
+    background-color: #8E44AD;
+}
+
+.secondary-color:hover {
+    background-color: #9A12B3;
+}
+
+.secondary-color:active {
+    background-color: #913D88;
+}
+
+input {
+    width: 100%;
+}
+
+input[type=text] {
+    width: 98%;
+    margin: 10px 0px 15px 0px;
+    padding: 12px 1%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+}
+
+input[placeholder],input[name=Phone] {
+    color: #555;
+}
+
+input[name=Phone]:focus, input[placeholder]:focus {
+    color: #000;
+}
+
+input[class=btn]{
+    width: 33.33%
+}
+
+a {
+    text-decoration: none;
+    color: #1E8BC3;
+}
+
+a:hover {
+    color: #2574A9;
+}
+
+a:active {
+    color: #34495E;
+}
+
+.center {
+    margin: auto;
+}
+
+.md-4 p {
+    margin-bottom: 10px;
+}
