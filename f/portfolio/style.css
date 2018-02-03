@@ -1,0 +1,284 @@
+* {
+    user-select: none;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color: mediumslateblue;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: slategray;
+}
+
+nav {
+    margin-top: 2% !important;
+    text-transform: capitalize;
+    position: sticky;
+    top: 3px;
+    z-index: 999;
+}
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        background-color: darkslateblue;
+        color: white;
+        list-style-type: none;
+        overflow: hidden;
+        border-radius: 5px;
+    }
+
+    nav ul li:first-child {
+        float: left;
+        text-transform: none;
+    }
+
+    nav ul li {
+        float: right;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        padding: 13px 16px;
+        display: block;
+        transition: background-color 0.2s;
+    }
+
+    ul li a:hover {
+        background-color: slateblue;
+    }
+
+header {
+    color: white;
+    padding-top: 25vh;
+    padding-bottom: 40vh;
+    font-size: 1.2em;
+}
+
+    header .rounded {
+        background-color: whitesmoke;
+        color: dodgerblue;
+        padding: 0 13px;
+        border-radius: 8px;
+    }
+
+header.content {
+    padding-top: 10vh;
+    padding-bottom: 20vh;
+}
+
+#gallery {
+    background-color: white;
+    overflow: auto;
+    border-radius: 5px;
+    padding-top: 2%;
+    margin-bottom: 20vh;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2)
+}
+    
+    #gallery h2 {
+        text-align: center;
+        color: slategray;
+    }
+
+.gallery {
+    margin-bottom: 10vh !important;
+}
+
+
+
+.box {
+    background-color: #fafafa;
+    margin: 3% 0 3% 3%;
+    width: 29.33%;
+    height: 40vh;
+    box-sizing: border-box;
+    border-radius: 8px;
+    float: left;
+    overflow: hidden;
+    text-align: center;
+    transition: background-color 0.8s;
+    -webkit-transition: background-color 0.8s;
+    position: relative;
+}
+
+    .box:hover {
+        background-color: whitesmoke;
+        color: slategray;
+        box-shadow: 0 0 55px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+    }
+
+    .box .overlay {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        overflow: hidden;
+        width: 100%;
+        height: 0;
+        transition: 0.5s ease;
+    }
+
+    .box:hover .overlay {
+        top: 70%;
+        height: 30%;
+    }
+
+    .overlay p {
+        color: slategray;
+        position: absolute;
+        overflow: hidden;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+
+.box-text {
+    padding: 20vh 0;
+    background-color: slategray;
+    color: white;
+}
+
+#profile, .profile {
+    padding: 15vh 0;
+    box-sizing: border-box;
+    color: slategray;
+    text-align: center;
+    background-color: white;
+}
+
+.profile {
+    padding: 3vh 0;
+    padding-top: 8vh;
+}
+
+.btn {
+    padding: 13px 34px;
+    border: none;
+    border-radius: 100px;
+    color: white;
+    font-weight: 700;
+    background-color: slateblue;
+    transition: background-color 0.5s;
+}
+
+    .btn:hover {
+        background-color: darkslateblue;
+    }
+
+#contact {
+    padding: 20vh 0;
+    color: white;
+    text-align: center;
+}
+    #contact h1 {
+        font-size: 96px;
+        text-decoration: underline;
+    }
+
+    #contact a {
+        transition: color 0.3s;
+    }
+
+    #contact a:hover {
+        color: darkslateblue;
+    }
+
+footer {
+    background-color: darkslateblue;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 1% 10%;
+    position: relative;
+    bottom: 0;
+}
+
+.data {
+    text-align: left;
+    padding: 5%;
+    padding-top: 2%;
+}
+
+    .data h2 {
+        margin-top: 15px;
+    }
+
+    .data ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .data ul li {
+        margin: 5px 0;
+    }
+    
+    ul li strong {
+        color: mediumslateblue;
+    }
+
+    .data ul li.rounded {
+        display: inline-block;
+        background-color: slateblue;
+        padding: 8px 13px;
+        border-radius: 20px;
+        color: white;
+    }
+
+.self img {
+    border-radius: 50%;
+}
+
+
+
+/* class style */ 
+.container {
+    margin: 0 10%;
+}
+
+.white {
+    color: white;
+}
+
+.slateblue {
+    color: slateblue;
+}
+
+@media only screen and (max-width: 480px) {
+    header {
+        font-size: 1.1em;
+    }
+
+    nav {
+        top: 0;
+
+    }
+   
+    nav ul li:first-child {
+        float: none;
+        text-align: center;
+    }
+
+    .container {
+        margin: 0 5%;
+    }
+
+
+    .box {
+        width: 94%;
+        margin: 3%;
+    }
+
+}
