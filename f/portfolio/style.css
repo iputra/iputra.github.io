@@ -165,6 +165,10 @@ header.content {
     padding-top: 8vh;
 }
 
+.profile img {
+    box-shadow: 0 0 99px rgba(0, 0, 0, 0.2);
+}
+
 .btn {
     padding: 13px 34px;
     border: none;
