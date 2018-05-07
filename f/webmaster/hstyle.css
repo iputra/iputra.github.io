@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a, a:hover, a:active {
+    text-decoration: none;
+}
+
+nav {
+    width: 100%;
+    padding: 10px 40px;
+    background-color: #0074E4;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar-main {
+    flex: 2;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-menu {
+    flex: 8;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+ul {
+    flex: 6;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+ul li {
+    margin: 0;
+    padding: 0 20px;
+}
+
+ul li a, .logo, .toggle .fa-bars {
+    color: white;
+}
+
+ul li a:hover, ul li a:active {
+    color: #264E86;
+}
+
+.navbar-menu .btn {
+    flex: 2;
+    background-color: #0074E4;
+    color: white;
+    border-color: white;
+}
+
+.toggle {
+    display: none;
+}
+
+header {
+    width: 100%;
+    height: 70vh;
+    background: linear-gradient(to right, #FFFFFF, transparent 25%, #264E86), url("220076_1366x768.jpeg") no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+header .container {
+    text-align: center;
+}
+
+h1, h4 {
+    color: #264E86;
+}
+
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+    }
+
+    .hamburger {
+        cursor: pointer;
+    }
+
+    .active {
+        display: flex;
+    }
+    
+    nav, .navbar-menu, ul {
+        flex-direction: column;
+    }
+
+    .navbar-main, .navbar-menu {
+        width: 100%;
+    }
+
+    .logo {
+        flex: 9;
+    }
+
+    .toggle {
+        flex: 1;
+        display: block;
+        text-align: right;
+    }
+
+    ul {
+        justify-content: center;
+    }
+
+    ul li {
+        text-align: center;
+    }
+
+    ul li, .navbar-menu .btn {
+        margin: 10px 0;
+    }
+}
