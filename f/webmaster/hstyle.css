@@ -210,9 +210,18 @@ footer b, footer a {
     display: block;
 }
 
+.event {
+    text-align: center;
+}
+
+.event hr {
+    width: 13%;
+}
+
 a {
     color: #0074E4;
 }
+
 
 @media (max-width: 768px) {
     .navbar-menu {
@@ -257,7 +266,16 @@ a {
         margin: 10px 0;
     }
 
-    #visi-image {
+    #visi-image, #short-description, .divisi-image {
         order: 99;
     }
+
+    footer .container {
+        margin-bottom: 21px;
+    }
+
+    #short-description .container {
+        margin-bottom: 0;
+    }
+    
 }
