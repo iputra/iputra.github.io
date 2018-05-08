@@ -3,7 +3,7 @@ body {
     padding: 0;
 }
 
-a, a:hover, a:active {
+a, a:hover, a:active, a:focus {
     text-decoration: none;
 }
 
@@ -17,7 +17,7 @@ nav {
 }
 
 .navbar-main {
-    flex: 2;
+    flex: 1;
     display: flex;
     flex-direction: row;
 }
@@ -30,13 +30,14 @@ nav {
 }
 
 ul {
-    flex: 6;
+    flex: 7;
     margin: 0;
     padding: 0;
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
 
 ul li {
@@ -48,15 +49,29 @@ ul li a, .logo, .toggle .fa-bars {
     color: white;
 }
 
+.menu li {
+    margin: 13px auto;
+}
+
+.menu li a {
+    color: #0074E4;
+}
+
 ul li a:hover, ul li a:active {
     color: #264E86;
 }
 
 .navbar-menu .btn {
-    flex: 2;
+    flex: 1;
     background-color: #0074E4;
     color: white;
     border-color: white;
+}
+
+.navbar-menu .btn:hover {
+    background-color: white;
+    color: #264E86;
+    border: none;
 }
 
 .toggle {
@@ -78,6 +93,125 @@ header .container {
 
 h1, h4 {
     color: #264E86;
+}
+
+.dropdown .btn {
+    border: none;
+}
+
+.btn-primary {
+    color: white !important;
+    background-color: #0074E4 !important;
+    border-color: #264E86 !important;
+}
+
+section {
+    padding: 0 40px;
+}
+
+.about .container, .visi .container, .divisi .container {
+    margin: 100px 0;
+}
+
+hr {
+    border: 3px solid #0074E4;
+    border-radius: 20px;
+}
+
+.about .container hr {
+    width: 45%;
+    margin-left: 0;
+}
+
+.visi {
+    background-color: #0074E4;
+}
+
+.visi .container hr {
+    width: 13%;
+    margin-right: 0;
+    border-color: white;
+}
+
+.visi h2, .visi p {
+    color: white;
+}
+
+.visi h2 {
+    text-align: right;
+}
+
+.visi p {
+    text-align: right;
+}
+
+.misi {
+    text-align: center;
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+
+.misi hr {
+    width: 8%;
+}
+
+.misi > .columns {
+    margin-top: 2%;
+}
+
+.misi .col-4 {
+    padding: 10px;
+}
+
+.misi .col-4 .container {
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+
+.web hr {
+    width: 25%;
+    margin-left: 0;
+}
+
+.shn .container {
+    text-align: right;
+}
+
+.shn hr {
+    width: 15%;
+    margin-right: 0;
+}
+
+.multimedia hr {
+    width: 21%;
+    margin-left: 0;
+}
+
+.jurnalistik .container {
+    text-align: right;
+}
+
+.jurnalistik hr {
+    width: 21%;
+    margin-right: 0;
+}
+
+footer {
+    background-color: #130f0f;
+    color: #504f4f;
+    padding: 20px 40px;
+}
+
+footer .container {
+    padding: 0 20px;
+}
+
+footer b, footer a {
+    display: block;
+}
+
+a {
+    color: #0074E4;
 }
 
 @media (max-width: 768px) {
@@ -121,5 +255,9 @@ h1, h4 {
 
     ul li, .navbar-menu .btn {
         margin: 10px 0;
+    }
+
+    #visi-image {
+        order: 99;
     }
 }
